@@ -17,34 +17,24 @@ export function HeroSection() {
           </div>
 
           {/* Heading */}
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 animate-slide-up">
-            Discover
-            <span className="gradient-text"> Rare Digital </span>
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 animate-slide-up">Completa La tua Collezione<span className="gradient-text"> Rare Digital </span>
             Cards
           </h1>
 
           {/* Subheading */}
           <p className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-slide-up" style={{
           animationDelay: '0.1s'
-        }}>
-            Explore our exclusive collections of digital collectible cards. 
-            From legendary dragons to cosmic beings, find your next prized addition.
-          </p>
+        }}>Completa la tua collezione acquistando le carte che ti mancano </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{
           animationDelay: '0.2s'
         }}>
             <Button variant="hero" size="xl" asChild>
-              <Link to="/#collections">
-                Browse Collections
-                <ArrowRight className="h-5 w-5 ml-2" />
-              </Link>
+              
             </Button>
             <Button variant="glass" size="xl" asChild>
-              <Link to="/#featured">
-                View Featured Cards
-              </Link>
+              
             </Button>
           </div>
 
