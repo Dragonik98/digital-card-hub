@@ -1,8 +1,6 @@
 import { Shield, Zap, Users } from 'lucide-react';
-
 export function WhoWeAre() {
-  return (
-    <section className="py-20 bg-secondary/30">
+  return <section className="py-20 bg-secondary/30">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -11,16 +9,10 @@ export function WhoWeAre() {
             <h2 className="font-display text-3xl sm:text-4xl font-bold mt-4 mb-6">
               Who We Are
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              We are passionate collectors and creators who believe in the power of digital art 
-              and collectibles. Our mission is to bring you the most exclusive, beautifully 
-              designed digital cards that you'll treasure in your collection.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Founded by enthusiasts for enthusiasts, we curate each collection with care, 
-              ensuring every card tells a story and holds value. Join our growing community 
-              of collectors who share the same passion for rare and unique digital treasures.
-            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">Siamo un gruppo di collezionisti appassionati di Pokémon, uniti dalla frustrazione di vedere scomparire il vero spirito del “free to play”. All’inizio del 2025 abbiamo deciso di creare una community dedicata allo spacchettamento dei GP in italiano, con un obiettivo semplice ma prezioso: permettere a tutti di completare la propria collezione in modo completamente gratuito.
+Per mesi ci siamo impegnati per far funzionare questo sistema per tutta la community, condividendo la passione per il collezionismo e riportando il divertimento al centro di tutto.</p>
+            <p className="text-muted-foreground leading-relaxed">Purtroppo, dopo l'aggiornamento di Dena, l'amico deve essere presente prima dell’apertura dei GP, ci siamo trovati davanti a un ostacolo importante. Non ci siamo arresi: dopo settimane di lavoro e test, siamo riusciti a trovare una soluzione che ci permette di mantenere attivo il progetto.
+Questa nuova gestione, però, comporta costi reali e continui, sia tecnici che organizzativi. Per questo oggi chiediamo un piccolo contributo: serve a coprire le spese, sostenere la manutenzione e permettere alla community di continuare a offrire un servizio funzionante, sicuro e accessibile a tutti.</p>
           </div>
 
           {/* Visual */}
@@ -55,6 +47,5 @@ export function WhoWeAre() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
