@@ -1,10 +1,8 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-
 export function HeroSection() {
-  return (
-    <section className="relative overflow-hidden py-20 lg:py-32">
+  return <section className="relative overflow-hidden py-20 lg:py-32">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
@@ -26,13 +24,17 @@ export function HeroSection() {
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.1s' }}>
+          <p className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-slide-up" style={{
+          animationDelay: '0.1s'
+        }}>
             Explore our exclusive collections of digital collectible cards. 
             From legendary dragons to cosmic beings, find your next prized addition.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{
+          animationDelay: '0.2s'
+        }}>
             <Button variant="hero" size="xl" asChild>
               <Link to="/#collections">
                 Browse Collections
@@ -47,9 +49,12 @@ export function HeroSection() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-border/50 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <div className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-border/50 animate-fade-in" style={{
+          animationDelay: '0.3s'
+        }}>
             <div>
-              <p className="font-display text-3xl font-bold gradient-text">142+</p>
+              <p className="font-display text-3xl font-bold gradient-text">110+
+            </p>
               <p className="text-sm text-muted-foreground mt-1">Unique Cards</p>
             </div>
             <div>
@@ -63,6 +68,5 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
