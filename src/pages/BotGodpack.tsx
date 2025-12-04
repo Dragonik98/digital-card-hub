@@ -3,10 +3,8 @@ import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Footer } from '@/components/layout/Footer';
 import { Bot, Zap, Shield, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 export default function BotGodpack() {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       <Breadcrumb />
       <main className="container py-12">
@@ -18,9 +16,11 @@ export default function BotGodpack() {
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
             Bot <span className="gradient-text">Godpack</span>
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            The ultimate automated card pack opening experience. Let our bot hunt for the rarest cards while you sit back and relax.
-          </p>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Il nostro bot ti permette di ottenere dei GP nella tua pesca misteriosa!
+
+Il funzionamento è molto semplice: tramite il token ID gestiamo automaticamente le richieste di amicizia sul tuo account, aggiungendo e rimuovendo gli amici in modo sicuro.
+
+Se uno degli amici aggiunti trova un GP, il bot lo rileva immediatamente e non lo elimina dalla lista, così da garantire la possibilità che ti appaia nella tua pesca misteriosa.</p>
         </div>
 
         {/* Features */}
@@ -70,6 +70,5 @@ export default function BotGodpack() {
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 }
