@@ -37,7 +37,7 @@ export function Advantages() {
           {advantages.map((advantage, index) => <div key={advantage.title} className="group rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_hsl(var(--primary)/0.15)]" style={{
           animationDelay: `${index * 0.1}s`
         }}>
-              <div className="rounded-lg bg-primary/10 w-12 h-12 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+              <div className="rounded-lg bg-primary/10 w-12 h-12 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors mx-[170px]">
                 <advantage.icon className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-display font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
