@@ -39,23 +39,7 @@ export function HeroSection() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-border/50 animate-fade-in" style={{
-          animationDelay: '0.3s'
-        }}>
-            <div>
-              <p className="font-display text-3xl font-bold gradient-text">110+
-            </p>
-              <p className="text-sm text-muted-foreground mt-1">Abbonamenti attivi </p>
-            </div>
-            <div>
-              <p className="font-display text-3xl font-bold gradient-text">6</p>
-              <p className="text-sm text-muted-foreground mt-1">Collections</p>
-            </div>
-            <div>
-              <p className="font-display text-3xl font-bold gradient-text">2K+</p>
-              <p className="text-sm text-muted-foreground mt-1">Scambi effettuati</p>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>;
