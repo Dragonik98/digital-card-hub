@@ -45,7 +45,7 @@ export function HeroSection() {
             <div>
               <p className="font-display text-3xl font-bold gradient-text">110+
             </p>
-              <p className="text-sm text-muted-foreground mt-1">Unique Cards</p>
+              <p className="text-sm text-muted-foreground mt-1">Abbonamenti attivi </p>
             </div>
             <div>
               <p className="font-display text-3xl font-bold gradient-text">6</p>
