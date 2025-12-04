@@ -21,13 +21,13 @@ Questa nuova gestione, però, comporta costi reali e continui, sia tecnici che o
               <div className="space-y-4">
                 <div className="rounded-xl border border-border bg-card p-6 hover-glow">
                   <Shield className="h-10 w-10 text-primary mb-4 mx-[110px]" />
-                  <h3 className="font-display font-semibold mb-2">Professionalità</h3>
-                  <p className="text-sm text-muted-foreground">Sicurezza di ricevere la carta selezionata</p>
+                  <h3 className="font-display font-semibold mb-2 text-center">Professionalità</h3>
+                  <p className="text-sm text-muted-foreground text-center">Sicurezza di ricevere la carta per cui hai pagato.</p>
                 </div>
                 <div className="rounded-xl border border-border bg-card p-6 hover-glow">
                   <Users className="h-10 w-10 text-accent mb-4" />
                   <h3 className="font-display font-semibold mb-2">Community</h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground mx-[110px]">
                     Join thousands of passionate collectors
                   </p>
                 </div>
@@ -35,7 +35,9 @@ Questa nuova gestione, però, comporta costi reali e continui, sia tecnici che o
               <div className="pt-8">
                 <div className="rounded-xl border border-border bg-card p-6 hover-glow h-full flex flex-col justify-center">
                   <Zap className="h-10 w-10 text-primary mb-4" />
-                  <h3 className="font-display font-semibold mb-2">Instant Delivery</h3>
+                  <h3 className="font-display font-semibold mb-2">Instant Delivery
+
+Carta scambiata nel giro di pochi minuti</h3>
                   <p className="text-sm text-muted-foreground">
                     Get your digital cards immediately after purchase
                   </p>
