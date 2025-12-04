@@ -6,9 +6,7 @@ export function WhoWeAre() {
           {/* Content */}
           <div>
             <span className="text-sm font-medium text-primary uppercase tracking-wider">About Us</span>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold mt-4 mb-6">
-              Who We Are
-            </h2>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold mt-4 mb-6">Chi siamo</h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">Siamo un gruppo di collezionisti appassionati di Pokémon, uniti dalla frustrazione di vedere scomparire il vero spirito del “free to play”. All’inizio del 2025 abbiamo deciso di creare una community dedicata allo spacchettamento dei GP in italiano, con un obiettivo semplice ma prezioso: permettere a tutti di completare la propria collezione in modo completamente gratuito.
 Per mesi ci siamo impegnati per far funzionare questo sistema per tutta la community, condividendo la passione per il collezionismo e riportando il divertimento al centro di tutto.</p>
             <p className="text-muted-foreground leading-relaxed">Purtroppo, dopo l'aggiornamento di Dena, l'amico deve essere presente prima dell’apertura dei GP, ci siamo trovati davanti a un ostacolo importante. Non ci siamo arresi: dopo settimane di lavoro e test, siamo riusciti a trovare una soluzione che ci permette di mantenere attivo il progetto.
