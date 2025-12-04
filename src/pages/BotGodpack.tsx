@@ -30,9 +30,7 @@ Se uno degli amici aggiunti trova un GP, il bot lo rileva immediatamente e non l
               <Zap className="h-6 w-6 text-primary" />
             </div>
             <h3 className="font-display font-semibold text-lg mb-2">Lightning Fast</h3>
-            <p className="text-sm text-muted-foreground">
-              Open hundreds of packs in minutes with our optimized bot system.
-            </p>
+            <p className="text-sm text-muted-foreground">Apre più di 300 pacchetti al minuto</p>
           </div>
 
           <div className="rounded-xl border border-border bg-card p-6 text-center">
