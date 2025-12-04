@@ -40,10 +40,10 @@ export function Advantages() {
               <div className="rounded-lg bg-primary/10 w-12 h-12 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors mx-[170px]">
                 <advantage.icon className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="font-display font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
+              <h3 className="font-display font-semibold text-lg mb-2 group-hover:text-primary transition-colors text-center">
                 {advantage.title}
               </h3>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground text-sm text-center">
                 {advantage.description}
               </p>
             </div>)}
