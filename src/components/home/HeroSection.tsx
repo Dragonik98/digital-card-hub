@@ -63,7 +63,7 @@ export function HeroSection() {
             </div>
             <div>
               <p className="font-display text-3xl font-bold gradient-text">2K+</p>
-              <p className="text-sm text-muted-foreground mt-1">Happy Collectors</p>
+              <p className="text-sm text-muted-foreground mt-1">Scambi effettuati</p>
             </div>
           </div>
         </div>
