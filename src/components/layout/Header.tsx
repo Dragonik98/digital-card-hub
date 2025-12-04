@@ -81,15 +81,15 @@ export function Header() {
               </Button>
               
               {activeMenu === 'seriesA' && (
-                <div className="absolute top-full left-0 pt-2 animate-fade-in">
-                  <div className="w-64 rounded-lg border border-border bg-popover p-2 shadow-xl">
+                <div className="absolute top-full left-0 pt-2 animate-fade-in z-50">
+                  <div className="w-72 max-h-[70vh] overflow-y-auto rounded-lg border border-border bg-popover p-2 shadow-xl">
                     {seriesACollections.map(collection => (
                       <Link
                         key={collection.id}
                         to={`/collection/${collection.id}`}
                         className="flex items-center gap-3 rounded-md px-3 py-2 hover:bg-secondary transition-colors"
                       >
-                        <div className="h-10 w-10 rounded bg-secondary flex items-center justify-center">
+                        <div className="h-10 w-10 rounded bg-secondary flex items-center justify-center shrink-0">
                           <span className="text-xs font-medium text-primary">{collection.cardCount}</span>
                         </div>
                         <div>
@@ -115,27 +115,41 @@ export function Header() {
               </Button>
               
               {activeMenu === 'seriesB' && (
-                <div className="absolute top-full left-0 pt-2 animate-fade-in">
-                  <div className="w-64 rounded-lg border border-border bg-popover p-2 shadow-xl">
-                    {seriesBCollections.map(collection => (
-                      <Link
-                        key={collection.id}
-                        to={`/collection/${collection.id}`}
-                        className="flex items-center gap-3 rounded-md px-3 py-2 hover:bg-secondary transition-colors"
-                      >
-                        <div className="h-10 w-10 rounded bg-secondary flex items-center justify-center">
-                          <span className="text-xs font-medium text-accent">{collection.cardCount}</span>
-                        </div>
-                        <div>
-                          <p className="font-medium text-sm">{collection.name}</p>
-                          <p className="text-xs text-muted-foreground">{collection.cardCount} cards</p>
-                        </div>
-                      </Link>
-                    ))}
+                <div className="absolute top-full left-0 pt-2 animate-fade-in z-50">
+                  <div className="w-72 rounded-lg border border-border bg-popover p-2 shadow-xl">
+                    {seriesBCollections.length > 0 ? (
+                      seriesBCollections.map(collection => (
+                        <Link
+                          key={collection.id}
+                          to={`/collection/${collection.id}`}
+                          className="flex items-center gap-3 rounded-md px-3 py-2 hover:bg-secondary transition-colors"
+                        >
+                          <div className="h-10 w-10 rounded bg-secondary flex items-center justify-center shrink-0">
+                            <span className="text-xs font-medium text-accent">{collection.cardCount}</span>
+                          </div>
+                          <div>
+                            <p className="font-medium text-sm">{collection.name}</p>
+                            <p className="text-xs text-muted-foreground">{collection.cardCount} cards</p>
+                          </div>
+                        </Link>
+                      ))
+                    ) : (
+                      <p className="px-3 py-2 text-sm text-muted-foreground">Coming soon...</p>
+                    )}
                   </div>
                 </div>
               )}
             </div>
+
+            {/* Bot Godpack */}
+            <Link to="/bot-godpack">
+              <Button variant="ghost" className="font-medium">Bot Godpack</Button>
+            </Link>
+
+            {/* Card Regular Trades */}
+            <Link to="/card-regular-trades">
+              <Button variant="ghost" className="font-medium">Card Regular Trades</Button>
+            </Link>
           </div>
         </div>
       </nav>

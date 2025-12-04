@@ -9,6 +9,8 @@ import Cart from "./pages/Cart";
 import Wishlist from "./pages/Wishlist";
 import Auth from "./pages/Auth";
 import Collection from "./pages/Collection";
+import BotGodpack from "./pages/BotGodpack";
+import CardRegularTrades from "./pages/CardRegularTrades";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +28,8 @@ const App = () => (
             <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/collection/:id" element={<Collection />} />
+            <Route path="/bot-godpack" element={<BotGodpack />} />
+            <Route path="/card-regular-trades" element={<CardRegularTrades />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
