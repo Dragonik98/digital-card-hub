@@ -17,7 +17,7 @@ export function HeroSection() {
           </div>
 
           {/* Heading */}
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 animate-slide-up">Completa La tua Collezione<span className="gradient-text"> Rare Digital </span>
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 animate-slide-up">Completa La tua Collezione<span className="gradient-text"> Rare Digital </span>
             Cards
           </h1>
 
