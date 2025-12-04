@@ -169,7 +169,7 @@
 @keyframes slide-up {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(19px);
   }
   to {
     opacity: 1;
