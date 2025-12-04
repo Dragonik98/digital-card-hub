@@ -26,19 +26,15 @@ Questa nuova gestione, però, comporta costi reali e continui, sia tecnici che o
                 </div>
                 <div className="rounded-xl border border-border bg-card p-6 hover-glow">
                   <Users className="h-10 w-10 text-accent mb-4" />
-                  <h3 className="font-display font-semibold mb-2">Community</h3>
-                  <p className="text-sm text-muted-foreground mx-[110px]">
-                    Join thousands of passionate collectors
-                  </p>
+                  <h3 className="font-display font-semibold mb-2 text-center">Community</h3>
+                  <p className="text-sm text-muted-foreground text-center mx-0">Community unita e sempre pronta ad aiutare i nuovi entrati nel gruppo.</p>
                 </div>
               </div>
               <div className="pt-8">
                 <div className="rounded-xl border border-border bg-card p-6 hover-glow h-full flex flex-col justify-center">
-                  <Zap className="h-10 w-10 text-primary mb-4" />
-                  <h3 className="font-display font-semibold mb-2">Instant Delivery
-
-Carta scambiata nel giro di pochi minuti</h3>
-                  <p className="text-sm text-muted-foreground">
+                  <Zap className="h-10 w-10 text-primary mb-4 mx-[110px]" />
+                  <h3 className="font-display font-semibold mb-2 text-center">Instant Delivery </h3>
+                  <p className="text-sm text-muted-foreground text-center">
                     Get your digital cards immediately after purchase
                   </p>
                 </div>
