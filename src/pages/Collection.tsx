@@ -4,12 +4,20 @@ import { Header } from '@/components/layout/Header';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Footer } from '@/components/layout/Footer';
 import { CardItem } from '@/components/cards/CardItem';
-import { collections, featuredCards } from '@/data/mockData';
+import { collections, generateCardsForCollection } from '@/data/mockData';
 import { Button } from '@/components/ui/button';
+import { useState, useMemo } from 'react';
 
 export default function Collection() {
   const { id } = useParams();
   const collection = collections.find((c) => c.id === id);
+  const [visibleCount, setVisibleCount] = useState(24);
+
+  // Generate cards for this collection
+  const collectionCards = useMemo(() => {
+    if (!collection) return [];
+    return generateCardsForCollection(collection.id, collection.cardCount);
+  }, [collection]);
 
   if (!collection) {
     return (
@@ -27,10 +35,12 @@ export default function Collection() {
     );
   }
 
-  // Filter cards by collection
-  const collectionCards = featuredCards.filter(
-    (card) => card.collection === collection.name
-  );
+  const visibleCards = collectionCards.slice(0, visibleCount);
+  const hasMore = visibleCount < collectionCards.length;
+
+  const loadMore = () => {
+    setVisibleCount(prev => Math.min(prev + 24, collectionCards.length));
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -61,19 +71,42 @@ export default function Collection() {
               <h1 className="font-display text-4xl font-bold mb-2">{collection.name}</h1>
               <p className="text-muted-foreground max-w-2xl">{collection.description}</p>
               <p className="text-sm text-muted-foreground mt-4">
-                {collection.cardCount} cards in this collection
+                {collection.cardCount} cards in this collection • Showing {visibleCards.length}
               </p>
             </div>
           </div>
         </div>
 
+        {/* Instructions */}
+        <div className="mb-8 p-4 rounded-lg bg-secondary/50 border border-border">
+          <p className="text-sm text-muted-foreground text-center">
+            <span className="font-medium text-foreground">How to buy:</span> Click on any card image to select your preferred language (Italian, English, or Japanese), then complete your purchase via PayPal.
+          </p>
+        </div>
+
         {/* Cards Grid */}
-        {collectionCards.length > 0 ? (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {collectionCards.map((card) => (
-              <CardItem key={card.id} card={card} />
-            ))}
-          </div>
+        {visibleCards.length > 0 ? (
+          <>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {visibleCards.map((card) => (
+                <CardItem key={card.id} card={card} />
+              ))}
+            </div>
+
+            {/* Load More Button */}
+            {hasMore && (
+              <div className="text-center mt-12">
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  onClick={loadMore}
+                  className="min-w-[200px]"
+                >
+                  Load More Cards ({collectionCards.length - visibleCount} remaining)
+                </Button>
+              </div>
+            )}
+          </>
         ) : (
           <div className="text-center py-20">
             <p className="text-muted-foreground mb-4">
