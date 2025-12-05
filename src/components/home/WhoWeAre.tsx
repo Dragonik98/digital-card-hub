@@ -18,7 +18,7 @@ Questa nuova gestione, però, comporta costi reali e continui, sia tecnici che o
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="rounded-xl border border-border bg-card p-6 hover-glow">
-                  <Shield className="h-10 w-10 text-primary mb-4 mx-[110px]" />
+                  <Shield className="h-10 w-10 text-primary mb-4 mx-[90px]" />
                   <h3 className="font-display font-semibold mb-2 text-center">Professionalità</h3>
                   <p className="text-sm text-muted-foreground text-center">Sicurezza di ricevere la carta per cui hai pagato.</p>
                 </div>
